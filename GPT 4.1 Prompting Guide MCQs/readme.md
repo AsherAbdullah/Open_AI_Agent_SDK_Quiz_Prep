@@ -396,3 +396,70 @@ Angle & Sin & Cos & Tan \\
 \end{table}
 
 \end{document}
+
+Question 18: Ethical Considerations
+The guide mentions ethical prompting to avoid biased outputs. You need a model to generate descriptions of software engineers. Which prompt minimizes bias?
+
+A) "Describe a typical software engineer."
+
+B) "Generate a description of a software engineer, avoiding stereotypes and focusing on professional skills and responsibilities."
+
+C) "Write about what software engineers do."
+
+D) "Create a profile of a software engineer with common traits."
+
+Correct Answer: B) "Generate a description of a software engineer, avoiding stereotypes and focusing on professional skills and responsibilities."
+
+Explanation: The guide advises crafting prompts to avoid biased assumptions. Option B explicitly instructs the model to focus on professional attributes, reducing the risk of stereotypical outputs.
+
+Question 19: API Integration
+You are integrating a model with an API to classify text sentiment. Based on the guide, which prompt ensures the model returns a structured JSON response?
+
+A) "Classify the sentiment of this text: 'I love this product!' as positive, negative, or neutral."
+
+B) ```
+Classify the sentiment of the text: 'I love this product!' Return a JSON object with fields:
+
+text: the input text
+sentiment: 'positive', 'negative', or 'neutral'
+confidence: a float between 0 and 1
+text
+
+
+
+C) "Analyze the sentiment of 'I love this product!' and return the result."  
+D) "Return JSON for sentiment analysis of 'I love this product!'."  
+
+**Correct Answer**: B) ```
+Classify the sentiment of the text: 'I love this product!' Return a JSON object with fields:
+- text: the input text
+- sentiment: 'positive', 'negative', or 'neutral'
+- confidence: a float between 0 and 1
+Explanation: The guide recommends specifying the exact output format. Option B provides clear instructions for a JSON structure with specific fields.
+
+Question 20: Complex Task Decomposition
+For a graduate-level task, you need to generate a Python script to simulate a queue system. Which prompt best decomposes the task per the guide’s recommendations?
+
+A) "Write a Python script for a queue."
+
+B) ```
+Write a Python script to simulate a queue system. The script should:
+
+Define a Queue class with methods for enqueue, dequeue, and is_empty.
+Handle edge cases like dequeuing from an empty queue.
+Include a main function demonstrating usage with at least 5 operations.
+Include docstrings for all methods.
+text
+
+
+
+C) "Create a queue simulation in Python."  
+D) "Generate code for a queue with basic operations."  
+
+**Correct Answer**: B) ```
+Write a Python script to simulate a queue system. The script should:
+1. Define a Queue class with methods for enqueue, dequeue, and is_empty.
+2. Handle edge cases like dequeuing from an empty queue.
+3. Include a main function demonstrating usage with at least 5 operations.
+4. Include docstrings for all methods.
+Explanation: The guide advocates breaking complex tasks into clear steps. Option B decomposes the task into specific requirements, ensuring comprehensive and robust code.
